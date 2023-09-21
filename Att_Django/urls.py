@@ -20,5 +20,5 @@ from core import views # Importa as views do app core
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.hello)
+    path('', views.index, name='index'), # Define a rota para a view hello
 ]
